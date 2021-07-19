@@ -1,0 +1,58 @@
+  .index{
+    font-weight: bolder;
+  }
+  .about{
+    font-weight: bolder;
+  }
+  .audiovisual{
+    font-weight: bolder;
+  }
+  .fotografia{
+    font-weight: bolder;
+  }
+  .contacto{
+    font-weight: bolder;
+  } 
+  nav{
+    text-align: center;
+    ul{      
+      .item-menu{            
+        margin: 0px auto;
+        width: 12em;          
+        &:hover{
+            ul{              
+              display: block;
+              }
+            }
+        a{          
+          &:hover{
+            color: $typo-color;
+            }                 
+          }
+        }
+      .width-boton-contacto{
+        width: 7em;        
+        } 
+    ul{
+      position: absolute;
+      display: none;
+      li{
+        display: block;                
+        text-align: left;
+      }
+    }
+    .hover-submenu{      
+      &:hover{
+        background-color: gray;
+        }
+      }           
+    }
+    img{
+      &:hover{
+        opacity: .7;
+      }
+    }
+  }
+
+  
+

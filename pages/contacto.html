@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descripción-->
+    <meta name="description" content="Formulario de contacto para establecer un vínculo profesional.">
+    <!--Palabras clave-->
+    <meta name="keywords"  content="andres klemen, contacto, email, trabajo, presupuesto, cotizacion, informacion">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Andrés Klemen - contacto</title>
+</head>
+<body>
+    <!--SECTION 1-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../multimedia/logo.svg" alt="logo"></a>            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar-center">
+                  <li class="nav-item item-menu">
+                    <a class="nav-link active text-light" aria-current="page" href="../index.html">inicio</a>
+                  </li>
+                  <li class="nav-item item-menu">
+                    <a class="nav-link text-light" href="about.html">about</a>
+                  </li>
+                  <li class="nav-item item-menu">
+                    <a class="nav-link text-light" href="audiovisual.html">audiovisual</a>
+                  </li>
+                  <li class="nav-item dropdown item-menu">
+                    <a class="nav-link dropdown-toggle text-light" href="fotografia.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      fotografía
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item hover-submenu" href="fotografia.html">serie retratos<span class="badge rounded-pill bg-dark ms-2">new</span></a></li>
+                      <li><a class="dropdown-item hover-submenu" href="fotografia.html">serie paisajes</a></li>
+                      <li><a class="dropdown-item hover-submenu" href="fotografia.html">serie fotoproducto</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item item-menu width-boton-contacto">
+                    <a class="nav-link text-light contacto botonContacto" href="contacto.html">contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--SECTION 2-->
+    <main>      
+        <section>
+            <h1 class="tituloContacto">Contacto</h1>
+            <h2 class="textoConsulta">¡Dejá acá tu consulta y te responderé a la brevedad!</h2>
+        </section>
+        <div class="flexContacto">
+            <div>
+                <form action="">
+                    <div>
+                        <label for="name">Nombre y apellido</label>
+                        <input type="text" name="name" id="name" placeholder="Escribí tu nombre" maxlength="30" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email" placeholder="persona@correo.com" required>
+                    </div>
+                    <div>
+                        <label for="pais">País de residencia</label>
+                        <select name="pais" id="pais" required>
+                            <option value="argentina">Argentina</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="cliente">
+                        <label class="cliente__label" for="cliente">Tipo de cliente</label>
+                        <div>
+                            <input class="cliente__radio cliente__radio--margin" type="radio" name="cliente" value="particular" required>Particular
+                            <input class="cliente__radio cliente__radio--margin" type="radio" name="cliente" value="empresa" required>Empresa
+                        </div>                        
+                    </div>                    
+                    <div>
+                        <label for="consulta">Consulta</label>
+                        <div>
+                            <textarea class="textarea-size" name="consulta" id="consulta" placeholder="Escribí tu consulta..." required></textarea>
+                        </div>                        
+                    </div>
+                    <div>
+                        <label for="newsletter">Acepto suscribirme al newsletter</label>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                    </div>
+                    <div class="display">
+                        <input type="reset" value="Limpiar datos">
+                    </div>
+                    <div class="display">
+                        <input type="submit" value="Enviar consulta">
+                    </div>
+                </form>
+            </div>            
+            <div class="foto-contacto">
+                <img class="foto-contacto__img foto-contacto__img--width" src="../multimedia/foto-contacto.jpg" alt="fotoContacto">
+            </div>
+        </div>
+        <nav class="mt-4" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="breadcrumb-hover" href="../index.html">inicio</a></li>
+              <li class="breadcrumb-item active breadcrumb-li" aria-current="page">contacto</li>
+            </ol>
+          </nav>
+    </main>
+    <!--SECTION 3-->
+    <footer>
+        <section class="iconos">
+            <a class="iconos__link" href="https://www.instagram.com/andresklemen/?hl=es-la" target="_blank" rel="noopener">
+                <img class="iconos__link__icono iconos__link__icono--size" src="../multimedia/instagram.png" alt="iconoInstagram">
+            </a>
+            <a class="iconos__link" href="https://vimeo.com/andresklemen" target="_blank" rel="noopener">
+                <img class="iconos__link__icono iconos__link__icono--size" src="../multimedia/vimeo.png" alt="iconoVimeo">
+            </a>
+            <a class="iconos__link" href="https://www.behance.net/andresklemen" target="_blank" rel="noopener">
+                <img class="iconos__link__icono iconos__link__icono--size" src="../multimedia/behance.png" alt="iconoBehance">
+            </a>
+        </section>
+        <section class="sitio">
+            <p class="sitio__desarrollo sitio__desarrollo--style">Sitio desarrollado por Andrés Klemen</p>
+        </section>
+    </footer>
+    <!--Script JS-->
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>

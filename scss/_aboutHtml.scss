@@ -1,0 +1,22 @@
+  .biografia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    .biografia__autofoto{
+      width: 20%;
+      border: 5px outset #f0e3ca;
+    }
+    .biografia__texto{
+      width: 50%;
+    }
+  }
+  .experienciaLaboral{
+    margin-top: 30px;
+    .accordion-toggle {
+      background-color: #a08f70;
+      color: $typo-color;
+      
+    }
+  }

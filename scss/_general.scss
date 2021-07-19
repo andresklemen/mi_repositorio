@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(26, 26, 26);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    main{
+        margin: 0 5%;
+      }
+  }
+  a{
+    text-decoration: none;
+    color: $typo-color-links;
+    &:visited{
+        color:$typo-color-links;
+      }
+  } 
+  h1{
+    color: #ffc947;
+  }
+  h2{
+    color: #f0e3ca;
+  }
+  h3, p{
+    color: $typo-color;
+  }
+  ul{
+    li{
+        list-style-type: none
+      }
+  }
+  nav{
+    .breadcrumb{
+      .breadcrumb-hover{
+        &:hover{
+          color: #ffffff;
+        }  
+      }      
+      .breadcrumb-li{
+        color: rgb(204, 204, 204);
+      }    
+    }
+  }
+
+
+  

@@ -1,0 +1,30 @@
+  footer{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(20, 20, 20), rgb(34, 34, 34));
+    .iconos{
+        .iconos__link{
+            .iconos__link__icono--size{
+                width: 30px;
+                margin: 0px 15px;
+                &:hover{
+                    opacity: .7;
+                  }
+            }
+        }
+    }
+    .sitio{
+        .sitio__desarrollo--style{
+            font-size: small;
+            margin: 10px 0px;
+            color:rgb(129, 129, 129)
+            
+        }
+    }
+  } 
+
+
+
+ 
