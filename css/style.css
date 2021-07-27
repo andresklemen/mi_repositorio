@@ -273,7 +273,7 @@ footer {
       .flex_404 .container_image .image_404 {
         width: 100%; }
     .flex_404 .text_404 {
-      padding: 0; } }
+      padding: 0 1em; } }
 
 @media screen and (max-width: 768px) {
   nav ul {
